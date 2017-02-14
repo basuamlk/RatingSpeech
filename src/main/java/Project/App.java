@@ -6,6 +6,7 @@ import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import org.apache.commons.lang3.StringEscapeUtils;
+import org.json.*;
 
 /**
  * Hello world!
@@ -19,7 +20,7 @@ public class App
 
 
         HttpResponse<JsonNode> response = Unirest.post("https://community-sentiment.p.mashape.com/text/")
-                .header("X-Mashape-Authorization", "<enter API key>")
+                .header("X-Mashape-Authorization", "jrrH60SvORmshuve3DmPj8Ey8WRap1Kx6hHjsnV1WezguBShda")
                 .header("Content-Type", "application/x-www-form-urlencoded")
                 .header("Accept", "application/json").field("txt", "what is life")
                 .asJson();
