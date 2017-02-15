@@ -12,7 +12,7 @@ public class Math {
         Scanner myScanner = new Scanner(System.in);
         int myInt = myScanner.nextInt();
         int mine = myInt/2;
-        for (int i = 1; i <= mine ; i++) {
+        for (int i = 0; i <= mine ; i++) {
             if (i * i == myInt) {
                 i++;
                 System.out.println(i*i);

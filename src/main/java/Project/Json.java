@@ -25,9 +25,8 @@ public class Json {
         String ipAddress = (String) myResponse.getBody().getObject().get("origin"); //sets our IP address to a string
         Print.ln(ipAddress); //prints out the string
 
-        String myHeaders = (String) (myResponse.getBody().getObject().get("headers")); // prints out the headers
-       
 
+        Print.p(myResponse.getBody().getObject().get("headers"));   // prints out the headers
 
 
     }
