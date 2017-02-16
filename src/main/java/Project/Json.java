@@ -29,5 +29,19 @@ public class Json {
         Print.p(myResponse.getBody().getObject().get("headers"));   // prints out the headers
 
 
+        Print.l();
+        Gson gson = new Gson();    //this Gson will convert the Java to Json.
+        StringBuilder buildGson = new StringBuilder();
+        String the = gson.toJson("ehl");
+        buildGson.append(the);
+        buildGson.append(gson.toJson("First"));
+        buildGson.append(gson.toJson("Second"));
+        buildGson.append(gson.toJson(3+"rd"));
+        System.out.println(buildGson);
+
     }
+
+
+
+
 }
