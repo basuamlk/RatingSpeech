@@ -37,5 +37,7 @@ public class App {
 
 
         myQuote.quote();
-       }
+        myRater.rate();
+
+    }
 }
