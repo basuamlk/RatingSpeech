@@ -37,7 +37,19 @@ public class App {
 
 
         myQuote.quote();
-        myRater.rate();
+        String rate = SpeechRater.rate();
+        Print.ln(rate);
 
+        if (rate.equalsIgnoreCase("positive")) {
+
+
+            //add function for positive meme
+        }
+        else if(rate.equalsIgnoreCase("neutral")) {
+            //add function for neutral meme here
+        }
+        else {
+            //add function for negative meme here
+        }
     }
 }
