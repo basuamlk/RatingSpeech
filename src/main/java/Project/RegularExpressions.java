@@ -38,7 +38,18 @@ public static void Regex(String theReg, String line) {
 //    Print.ln(myString);
 
 }
-
+//
+//    public static void main(String[] args) {
+//
+//
+//        String me = "help me out";
+//        String mine = me.replaceAll("",":");
+//
+//        Print.ln(me);
+//        Print.ln(mine);
+//        String[] king = me.split("\\s");
+//        Print.ln(king[1]);
+//    }
 
 }
 
