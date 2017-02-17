@@ -34,6 +34,7 @@ public class App {
             // list of API incorporated
         SpeechRater myRater = new SpeechRater();
         Quote myQuote = new Quote();
+        YodaSpeaks speaks = new YodaSpeaks();
 
 
         myQuote.quote();
@@ -51,5 +52,9 @@ public class App {
         else {
             //add function for negative meme here
         }
+
+YodaSpeaks.Speak();
+
+
     }
 }
