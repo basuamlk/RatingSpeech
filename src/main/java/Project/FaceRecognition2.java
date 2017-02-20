@@ -14,6 +14,7 @@ public class FaceRecognition2 {
 
     public static void main(String[] args) throws UnirestException{
 
+        
         Scanner myScanner = new Scanner(System.in);
         String myString = myScanner.nextLine();
         String myString2 = myString.replace("/","%2F").replace(":","%3A");

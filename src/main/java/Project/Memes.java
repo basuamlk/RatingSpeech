@@ -4,7 +4,11 @@ import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.awt.image.BufferedImage;
 import java.io.InputStream;
+import java.net.URL;
 
 /**
  * Created by yassin on 2/15/17.
@@ -21,6 +25,10 @@ public class Memes {
                .asBinary();
 
        System.out.println(myResponse.getBody());
+
+
+
+
         HttpResponse<InputStream> response = Unirest.get("https://ronreiter-meme-generator.p.mashape.com/meme?bottom=Bottom+text&font=Impact&font_size=50&meme=Condescending+Wonka&top=Top+text")
                 .header("X-Mashape-Key", "dt7YlhuKyBmshotQbTak44smSS3Xp1Iy3etjsnx2u6J7wA3E7m") // sample template
                 .asBinary();
